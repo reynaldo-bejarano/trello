@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../path/to/flowbite/dist/flowbite.js"></script>
+    <script src="https://unpkg.com/scrollreveal" defer></script>
+    <script src="./app.js" defer></script>
+
+    <title>Exposición Trello</title>
+</head>
+
+<body>
+    <section class="h-screen">
+        <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 ">
+            <div class="container flex flex-wrap justify-between items-center mx-auto">
+                <a href="#" class="flex items-center">
+                    <img src="./img/logo.png" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo">
+                    <span class="self-center text-slate-800 text-xl font-semibold whitespace-nowrap ">Trello</span>
+                </a>
+                <div class="w-full md:block md:w-auto" id="navbar-default">
+                    <ul
+                        class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <a href="#"
+                            class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent  md:p-0 dark:text-white"
+                            aria-current="page">Descargar Brochure</a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="hero" class="grid lg:grid-cols-2 container mx-auto gap-10 justify-center p-10 2xl:py-44">
+            <div class="text-center lg:text-left md:p-10" >
+                <h1 class="mb-10 font-bold text-3xl md:text-6xl 2xl:text-7xl text-pink-800">Nicole</h1>
+                <h1 class="mb-10 font-bold text-4xl md:text-8xl 2xl:text-9xl text-slate-700">Reynaldo</h1>
+                <h1 class="mb-10 font-bold text-3xl md:text-7xl 2xl:text-8xl text-teal-700">Francisco</h1>
+            </div>
+            <div class="flex justify-center">
+                <img src="./img/hero.webp" alt="hero logo" class="w-44 md:w-96" />
+            </div>
+        </div>
+    </section>
+
+
+    <section id="banner">
+        <div class="container mx-auto py-32 grid justify-center">
+            <h1
+                class="w-full md:w-[90%] lg:w-[70%] mx-auto text-center font-bold py-10 text-3xl md:text-4xl 2xl:text-5xl text-slate-600 w-full">
+                Trello le permite a tu equipo gestionar cualquier tipo de proyecto</h1>
+            <img src="./img/board.webp" alt="board-trello" class="md:w-[95%] lg:w-[75%] 2xl:w-[90%] mx-auto" />
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="w-[90%] lg:w-[80%] mx-auto grid  gap-24">
+            <div class="grid md:grid-cols-3 justify-center gap-10">
+                <div class="mx-auto">
+                    <div class="flex items-center gap-2 mb-5">
+                        <svg fill="darkgray" height="24" role="img" viewBox="0 0 64 64" width="24">
+                            <path clip-rule="evenodd"
+                                d="M31.8115 38.0924C31.393 37.0057 29.8555 37.0057 29.4369 38.0924L27.8317 42.2604L23.6637 43.8656C22.577 44.2842 22.577 45.8217 23.6637 46.2402L27.8317 47.8454L29.4369 52.0135C29.8555 53.1002 31.393 53.1002 31.8115 52.0135L33.4167 47.8454L37.5848 46.2402C38.6715 45.8217 38.6715 44.2842 37.5848 43.8656L33.4167 42.2604L31.8115 38.0924Z"
+                                fill-rule="evenodd" opacity="0.5"></path>
+                            <path clip-rule="evenodd"
+                                d="M32 0C49.6731 0 64 14.3269 64 32C64 49.6731 49.6731 64 32 64C14.3269 64 0 49.6731 0 32C0 14.3269 14.3269 0 32 0ZM46.6329 24.4498C46.2144 23.3631 44.6769 23.3631 44.2584 24.4498L42.6531 28.6178L38.4851 30.223C37.3984 30.6416 37.3984 32.1791 38.4851 32.5976L42.6531 34.2028L44.2584 38.3709C44.6769 39.4576 46.2144 39.4576 46.6329 38.3709L48.2381 34.2028L52.4062 32.5976C53.4929 32.1791 53.4929 30.6416 52.4062 30.223L48.2381 28.6178L46.6329 24.4498ZM31.8119 38.0919C31.3934 37.0052 29.8558 37.0052 29.4373 38.0919L27.8321 42.26L23.6641 43.8652C22.5773 44.2837 22.5773 45.8213 23.6641 46.2398L27.8321 47.845L29.4373 52.013C29.8558 53.0998 31.3934 53.0998 31.8119 52.013L33.4171 47.845L37.5851 46.2398C38.6719 45.8213 38.6719 44.2837 37.5851 43.8652L33.4171 42.26L31.8119 38.0919ZM22.7155 13.3671C23.2177 12.0631 25.0627 12.0631 25.565 13.3671L27.5398 18.4949L32.6675 20.4697C33.9716 20.9719 33.9716 22.8169 32.6676 23.3192L27.5398 25.294L25.565 30.4217C25.0627 31.7258 23.2177 31.7258 22.7155 30.4217L20.7407 25.294L15.6129 23.3192C14.3089 22.8169 14.3088 20.9719 15.6129 20.4697L20.7407 18.4949L22.7155 13.3671Z"
+                                fill-rule="evenodd"></path>
+                        </svg>
+                        <p class="font-bold text-slate-700 2xl:text-lg">Vistas</p>
+                    </div>
+                    <p class="font-bold text-sm 2xl:text-lg text-slate-500"> Vea sus proyectos desde todos los ángulos con las
+                        vistas de Tablero, Cronograma, Tabla, Calendario, Tablero de Control, Mapa y Espacio de Trabajo
+                    </p>
+                </div>
+
+
+                <div class="mx-auto">
+                    <div class="flex items-center gap-2 mb-5">
+                        <svg fill="darkgray" height="24" role="img" viewBox="0 0 14 15" width="24">
+                            <path clip-rule="evenodd"
+                                d="M14 12.6591C14 13.7225 13.138 14.5845 12.0746 14.5845H1.92539C0.862025 14.5845 0 13.7225 0 12.6591V6.84793C0 5.78457 0.862025 4.92255 1.92539 4.92255H12.0746C13.138 4.92255 14 5.78457 14 6.84793V12.6591ZM5.93141 9.76875C5.93141 10.491 5.34594 11.0764 4.62372 11.0764C3.9015 11.0764 3.31603 10.491 3.31603 9.76875C3.31603 9.04653 3.9015 8.46106 4.62372 8.46106C5.34594 8.46106 5.93141 9.04653 5.93141 9.76875ZM9.39293 11.0764C10.1151 11.0764 10.7006 10.491 10.7006 9.76875C10.7006 9.04653 10.1151 8.46106 9.39293 8.46106C8.67071 8.46106 8.08523 9.04653 8.08523 9.76875C8.08523 10.491 8.67071 11.0764 9.39293 11.0764Z"
+                                fill-rule="evenodd"></path>
+                            <path clip-rule="evenodd"
+                                d="M7.00008 0C5.95938 0 5.11572 0.843654 5.11572 1.88435C5.11572 2.68063 5.60962 3.36154 6.30778 3.63747V4.92225L6.30853 4.95484C6.32555 5.32206 6.62866 5.61456 7.00009 5.61456C7.38244 5.61456 7.69239 5.3046 7.69239 4.92225V3.63746C8.39054 3.36153 8.88443 2.68062 8.88443 1.88435C8.88443 0.843654 8.04078 0 7.00008 0ZM7.00945 2.38385C7.28112 2.37885 7.49981 2.15706 7.49981 1.8842C7.49981 1.6082 7.27607 1.38446 7.00007 1.38446C6.72408 1.38446 6.50034 1.6082 6.50034 1.8842C6.50034 2.15707 6.71903 2.37886 6.99071 2.38385C6.99383 2.38381 6.99696 2.38379 7.00009 2.38379C7.00321 2.38379 7.00634 2.38381 7.00945 2.38385Z"
+                                fill-rule="evenodd" opacity="0.5"></path>
+                        </svg>
+                        <p class="font-bold text-slate-700 2xl:text-lg">Automatización</p>
+                    </div>
+                    <p class="font-bold text-sm 2xl:text-lg text-slate-500">
+                        Cada tablero de Trello lleva incorporada una potente automatización sin código. Con Butler,
+                        puedes centrarte en el trabajo más importante y dejar que los robots hagan el resto.
+                    </p>
+                </div>
+
+                <div class="mx-auto">
+                    <div class="flex items-center gap-2 mb-5">
+                        <svg fill="darkgray" height="24" role="img" viewBox="0 0 65 65" width="24">
+                            <path clip-rule="evenodd"
+                                d="M55.8054 34.7189C57.1531 34.6565 58.2266 33.5441 58.2266 32.1809C58.2266 30.7776 57.089 29.6401 55.6857 29.6401L35.0769 29.6401V18.3476L35.0752 18.1664C34.9786 13.1047 30.8453 9.03125 25.7606 9.03125L9.38642 9.03125L9.26682 9.03402C7.91909 9.09647 6.84561 10.2089 6.84561 11.5721C6.84561 12.9753 7.98317 14.1129 9.38642 14.1129L25.7606 14.1129L25.8976 14.1151C28.1729 14.1874 29.9953 16.0547 29.9953 18.3476L29.9953 46.0142L29.9931 46.1513C29.9207 48.4266 28.0535 50.2489 25.7606 50.2489H9.38642L9.26682 50.2517C7.91909 50.3142 6.84561 51.4266 6.84561 52.7897C6.84561 54.193 7.98317 55.3306 9.38642 55.3306H25.7606L25.9418 55.3288C31.0034 55.2323 35.0769 51.099 35.0769 46.0142L35.0769 34.7217H55.6857L55.8054 34.7189Z"
+                                fill-rule="evenodd" opacity="0.5"></path>
+                            <path
+                                d="M11.9282 0.5625C18.0089 0.5625 22.9384 5.49194 22.9384 11.5727C22.9384 17.6535 18.0089 22.5829 11.9282 22.5829C5.8474 22.5829 0.917969 17.6535 0.917969 11.5727C0.917969 5.49194 5.8474 0.5625 11.9282 0.5625Z">
+                            </path>
+                            <path
+                                d="M11.9282 41.7793C18.0089 41.7793 22.9384 46.7087 22.9384 52.7895C22.9384 58.8703 18.0089 63.7997 11.9282 63.7997C5.8474 63.7997 0.917969 58.8703 0.917969 52.7895C0.917969 46.7087 5.8474 41.7793 11.9282 41.7793Z">
+                            </path>
+                            <path
+                                d="M53.1469 21.1719C59.2277 21.1719 64.1571 26.1013 64.1571 32.1821C64.1571 38.2628 59.2277 43.1923 53.1469 43.1923C47.0662 43.1923 42.1367 38.2628 42.1367 32.1821C42.1367 26.1013 47.0662 21.1719 53.1469 21.1719Z">
+                            </path>
+                        </svg>
+                        <p class="font-bold text-slate-700 2xl:text-lg">Integraciones</p>
+                    </div>
+                    <p class="font-bold text-sm 2xl:text-lg text-slate-500"> Encuentra las aplicaciones que tu equipo ya está
+                        utilizando o descubre nuevas formas de hacer el trabajo en Trello.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="caracteristicas">
+        <div class="w-[90%] lg:w-[80%] mx-auto py-32 grid lg:grid-cols-5 gap-24">
+            <img src="./img/features.svg" alt="features" class="lg:col-span-2" />
+            <div class="lg:col-span-3">
+                <h2 class="text-center lg:text-left font-bold text-3xl md:text-4xl 2xl:text-5xl text-slate-600 mb-5">
+                    Caractéristicas para lograr el éxito en tu equipo</h2>
+                <p class="text-center lg:text-left text-md font-bold 2xl:text-4xl text-slate-400">
+                    Las listas y las tarjetas son los elementos básicos para organizar el trabajo en un tablero de
+                    Trello. A partir de ahí, puedes asignar tareas, plazos, métricas de productividad, calendarios y
+                    mucho más.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cartas">
+        <div class="w-[90%] lg:w-[80%] mx-auto grid lg:grid-cols-5 gap-24">
+            <div class="lg:col-span-3">
+                <h2 class="text-center lg:text-left font-bold text-3xl md:text-4xl 2xl:text-5xl text-slate-600 mb-5">
+                    Cartas y Etiquetas</h2>
+                <p class="text-center lg:text-left text-md font-bold 2xl:text-4xl text-slate-400">
+                    Las etiquetas de Trello son tu portal hacia un trabajo más organizado. Abre cualquier tarjeta para
+                    descubrir un ecosistema de listas de control, fechas de vencimiento, archivos adjuntos,
+                    conversaciones y mucho más.
+                </p>
+            </div>
+            <img src="./img/card-back.svg" alt="features" class="lg:col-span-2" />
+        </div>
+    </section>
+
+    <section id="equipos">
+        <div class="w-[90%] lg:w-[80%] mx-auto py-32 grid gap-24">
+            <h2 class="text-center  font-bold text-3xl md:text-4xl 2xl:text-5xl text-slate-600 mb-5">Más de 2.000.000 de
+                equipos en todo el mundo</h2>
+            <div class=" grid md:flex justify-evenly items-center gap-10">
+                <img src="./img/johnDeere.svg" alt="features" class="" />
+                <img src="./img/Visa.svg" alt="features" class="" />
+                <img src="./img/Google.svg" alt="features" class="" />
+            </div>
+        </div>
+    </section>
+
+    <section id="moviles">
+        <div class="w-[90%] lg:w-[80%] mx-auto grid py-10">
+            <h2 class="text-center  font-bold text-3xl md:text-4xl 2xl:text-5xl text-slate-600 mb-10">Trello está
+                disponible para dispositivos móviles</h2>
+            <div class="grid justify-center md:flex md:items-center md:justify-center gap-10 lg:gap-20">
+                <img src="./img/app-store.svg" alt="app-store logo" class="" />
+                <img src="./img/play-store.svg" alt="app-store logo" class="" />
+            </div>
+        </div>
+    </section>
+
+    <section id="precios">
+        <div class="w-[90%] lg:w-[80%] mx-auto py-20">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 items-center">
+                <div class="border border-4 bg-pink-900 p-5 h-80 rounded-l-lg">
+                    <p class="font-bold text-3xl mb-5 text-white">Gratis</p>
+                    <p class="text-md mb-5 text-white">$<span class="text-5xl font-bold">0</span>USD</p>
+                    <p class="text-md text-white py-5">Para individuos, estudiantes o equipos que buscan organizar
+                        cualquier proyecto.</p>
+                </div>
+                <div class="border border-4 bg-teal-900 p-5 h-96 rounded-lg">
+                    <p class="font-bold text-3xl mb-5 text-white">Estándar</p>
+                    <p class="text-md mb-5 text-white ">$<span class="text-5xl font-bold">5</span>USD</p>
+                    <p class="text-md text-white py-5">Para equipos pequeños que necesitan gestionar el trabajo y
+                        ampliar la colaboración.</p>
+                </div>
+                <div class="border border-4 bg-pink-900 p-5 h-96 lg:h-80">
+                    <p class="font-bold text-3xl mb-5 text-white">Premium</p>
+                    <p class="text-md mb-5 text-white">$<span class="text-5xl font-bold">10</span>USD</p>
+                    <p class="text-md text-white py-5">Para equipos que necesitan hacer un seguimiento y visualizar
+                        múltiples proyectos.</p>
+                </div>
+                <div class="border border-4 bg-teal-900 p-5 h-80 lg:h-96 rounded-lg">
+                    <p class="font-bold text-3xl mb-5 text-white">Empresarial</p>
+                    <p class="text-md mb-5 text-white">$<span class="text-5xl font-bold">17.50</span>USD</p>
+                    <p class="text-md text-white py-5">Para organizaciones que necesitan conectar el trabajo entre
+                        equipos con más seguridad y controles.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="h-10 bg-slate-800 flex items-center justify-center">
+        <p class="text-center text-white">App Trello - Formulación de proyectos 2022</p>
+    </footer>
+
+
+
+
+</body>
+
+</html>
